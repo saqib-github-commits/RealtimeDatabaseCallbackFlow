@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "107955942234",
+    "project_id": "realtime-db-test-83be1",
+    "storage_bucket": "realtime-db-test-83be1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107955942234:android:732f5a6b3dd612fc78b963",
+        "android_client_info": {
+          "package_name": "com.realtimedatabase.callbackflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107955942234-6ikiqejobs37jql8uv7dbmfc0b42d782.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwXB5qLV1cJ51BBo-1KBCz9XJwZ1-zTMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107955942234-6ikiqejobs37jql8uv7dbmfc0b42d782.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

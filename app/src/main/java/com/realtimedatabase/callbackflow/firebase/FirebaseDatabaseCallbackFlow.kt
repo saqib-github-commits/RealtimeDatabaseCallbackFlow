@@ -1,6 +1,5 @@
 package com.realtimedatabase.callbackflow.firebase
 
-import android.content.ContentValues
 import android.content.ContentValues.TAG
 import android.util.Log
 import com.google.firebase.database.DataSnapshot
@@ -15,7 +14,7 @@ object FirebaseDatabaseCallbackFlow {
 
     fun readFirebaseRealtimeDatabaseFlow(): Flow<String> = callbackFlow {
 
-        val database = FirebaseDatabase.getInstance("https://realtime-db-test-83be1-default-rtdb.europe-west1.firebasedatabase.app/")
+        val database = FirebaseDatabase.getInstance("<path for realtimedatabase>")
         val databaseRef = database.reference
 
         val firebaseDataListeners = object : ValueEventListener {
@@ -24,7 +23,7 @@ object FirebaseDatabaseCallbackFlow {
                 // whenever data at this location is updated.
                 val value = dataSnapshot.value
                 Log.d(TAG, "Value is: $value")
-                trySend(value?.toString() ?: "")
+                trySend(value?.toString().orEmpty())
             }
 
             override fun onCancelled(error: DatabaseError) {

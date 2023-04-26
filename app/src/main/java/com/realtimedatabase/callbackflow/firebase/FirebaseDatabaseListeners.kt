@@ -11,7 +11,7 @@ object FirebaseDatabaseListeners {
 
     fun readFirebaseRealtimeDatabase() {
         // Create Database Object
-        val database = FirebaseDatabase.getInstance("https://realtime-db-test-83be1-default-rtdb.europe-west1.firebasedatabase.app/")
+        val database = FirebaseDatabase.getInstance("<path of database>")
         val databaseRef = database.reference
         // Read from the database
         databaseRef.addValueEventListener(object : ValueEventListener {

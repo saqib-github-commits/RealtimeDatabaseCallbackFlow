@@ -1,4 +1,4 @@
-# RealtimeDatabase CallbackFlow
+# RealtimeDatabase callbackFlow
 This project shows usage of callbackFlow using Firebase RealtimeDatabase callbacks. It converts callbacks into callbackFlow
 
 ## Medium Blog
